@@ -15,9 +15,9 @@ const PokemonList = () => {
     })
     return (
         <div>
-            <h1>Original 151 Pokemon</h1>
+            <h1>Original 150 Pokemon</h1>
             
-            {pokemonList ? <img src={pokemonList} alt=" List of Pokemons" /> : <p>Loading...</p>}
+            {pokemonList ? <img src={pokemonList} alt=" List of Pokemon's" /> : <p>Loading...</p>}
         </div>
     );
 };
