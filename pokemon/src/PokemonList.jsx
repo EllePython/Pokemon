@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { ListGroup } from 'react-bootstrap'
+//import { ListGroup } from 'react-bootstrap'
 
 const PokemonList = () => {
     const [pokemonList, setPokemonList] = useState([]);
@@ -16,12 +16,8 @@ const PokemonList = () => {
     return (
         <div>
             <h1>Original 151 Pokemon</h1>
-            <ListGroup>
-                {pokemonList.map(pokemon => (
-                    <ListGroup.Item key={pokemon.name}>{pokemon.name}</ListGroup.Item>
-              
-                ))}
-            </ListGroup>
+            
+            {pokemonList ? <img src={pokemonList} alt=" List of Pokemons" /> : <p>Loading...</p>}
         </div>
     );
 };
