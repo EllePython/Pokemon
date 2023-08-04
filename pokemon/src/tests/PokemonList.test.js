@@ -34,7 +34,7 @@ test('error message on failed fetch', async () => {
     global.fetch = jest.fn(() => Promise.reject(new Error('Failed to fetch data')));
     render(<PokemonList />);
 
-    const errorMessage = await screen.findByText('Error fetching Pokemon');
+    const errorMessage = await screen.findByText('Error fetching pokemon cards');
 
     expect(errorMessage).toBeInTheDocument();
 })
